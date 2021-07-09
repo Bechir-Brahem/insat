@@ -1,0 +1,26 @@
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {  position:relative;height: 22px; padding:7px 0px 0 0; color:#777777; font-size:11px;  text-align:left; margin-top:0px; margin-left:0px; background:none; }
+.jqTransformSelectWrapper div span {font-size: 11px;position: absolute; white-space: nowrap;height: 19px; font-family:Arial; padding: 0px 0 0 11px;overflow: hidden;cursor:pointer;}
+.jqTransformSelectWrapper a.jqTransformSelectOpen {display: block;position: absolute;right: 40px;width: 13px; height: 7px;background:url(../fr/image/gif/flech_theme.gif) top right no-repeat ;overflow:hidden; top:11px;}
+.jqTransformSelectWrapper ul {position: absolute;  top: 29px;left:0px;list-style: none;background-color: #fff;border-bottom:#d7d7d5 solid 1px;border-left:#d7d7d5 solid 1px;border-right:#d7d7d5 solid 1px;border-top:#d7d7d5 solid 1px;display: none;margin: 0;padding:6px 10px 0 8px;overflow: auto; z-index:100;}
+.jqTransformSelectWrapper ul a {display: block;padding: 5px 0px;text-decoration: none;color:#999999;font-size: 11px; font-family:Arial;background:url(../fr/image/gif/pt.gif) bottom left repeat-x ; border-bottom:#d7d7d5 solid 1px; text-transform:uppercase;}
+.jqTransformSelectWrapper ul a.selected {color:#000;display:block; text-decoration:underline;}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {color:#000; text-decoration:underline; }
+
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {display: none;}
+
+
+div.SelectWrapper2 .jqTransformSelectWrapper {  position:relative; height: 24px; padding:0 0 0 0; color:#999999;  font-size:11px;  text-align:left; background:none;}
+div.SelectWrapper2 .jqTransformSelectWrapper div span { position: absolute; white-space: nowrap;height: 15px; color:#999999; overflow: hidden;cursor:pointer; font-family:arial; font-size:11px; top:0px; text-transform:uppercase; height:24px; line-height:24px;}
+div.SelectWrapper2 .jqTransformSelectWrapper a.jqTransformSelectOpen {display: block;position: absolute; right:0px; top:1px; width:29px; height:22px; background:url(../fr/image/gif/flech_membre.gif) top right no-repeat ;overflow:hidden;}
+
+
+div.SelectWrapper2 .jqTransformSelectWrapper ul {position:absolute;  top:23px; left:0px; list-style: none; display:none; margin:0px; padding:4px 1px 0 0 !important; padding: 0px;overflow: auto; z-index:100; background:#fff; border-bottom:#d7d7d5 solid 1px;border-left:#d7d7d5 solid 1px;border-right:#d7d7d5 solid 1px; height:75px;}
+.jqTransformSelectWrapper ul a {display: block;padding: 5px 0px;text-decoration: none;color:#999999;font-size: 11px; font-family:Arial;background:url(../fr/image/gif/pt.gif) bottom left repeat-x ; border-bottom:#d7d7d5 solid 1px; text-transform:uppercase;}
+.jqTransformSelectWrapper ul a.selected {color:#000;display:block; text-decoration:underline;}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {color:#000; text-decoration:underline; }

@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+	.lof-slidecontent{
+	position:relative;
+	overflow:hidden;
+	border:#c2c2bd solid 1px;
+	width:646px;
+	height:283px;
+}
+.lof-slidecontent .preload{
+	height:100%;
+	width:100%;
+	background:#FFF;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	color:#FFF;
+	text-align:center
+}
+.lof-slidecontent .preload div{
+	height:100%;
+	width:100%;
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+}
+.lof-main-outer{
+	position:relative;
+	height:283px;
+	width:445px;
+	z-index:3px;
+	overflow:hidden;
+	z-index:3
+}
+
+
+/*******************************************************/
+.lof-main-item-desc{
+	z-index:100px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:445px;
+	background:url(../images/transparent_bg.png);
+
+	/* filter:0.7(opacity:60) */
+}
+.lof-main-item-desc .date{
+	color:#cccccc;
+	padding:7px 20px 0 20px;
+
+}
+.lof-main-item-desc .title{
+	color:#fff;
+	font-size:12px;
+	padding:0px 20px;
+
+}
+.lof-main-item-desc .title:hover{ text-decoration:underline;}
+.lof-main-item-desc .desc{
+	color:#cccccc;
+	padding:10px 20px 15px 20px;
+
+}
+
+.lof-main-item-desc .desc a{
+	color:#fff;
+font-weight:700;}
+
+
+/* main flash */
+ul.lof-main-wapper{
+	/* margin-right:auto; */
+	overflow:hidden;
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+	padding:0px;
+	margin:0;
+	height:283px;
+	width:445px;
+	position:absolute;
+	overflow:hidden;
+}
+
+ul.lof-main-wapper li{
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	height:283px;
+	width:445px;
+	float:left;
+}
+.lof-opacity  li{
+	position:absolute;
+	top:0;
+	left:0;
+	float:inherit;
+}
+ul.lof-main-wapper li img{
+	padding:0px;	
+	width:445px;
+}
+
+li-desc{
+	z-index:100px;
+	position:absolute;
+	top:150px;
+	left:50px;
+	width:400px;
+	background:url(../images/transparent_bg.png);
+
+	/* filter:0.7(opacity:60) */
+}
+li-desc p{
+	color:#FFF;
+	/*margin:0 8px;
+	padding:8px 0*/
+}
+li-desc h3 a{
+	color:#FFF;	
+	margin:0;
+	font-size:140%;
+	/*padding:20px 8px 2px;*/
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+}
+li-desc h3 a:hover{
+	color:#FF6;
+	text-decoration:underline;
+}
+
+/* item navigator */
+ul.lof-navigator{
+	top:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+	width:200px;
+}
+ul.lof-navigator li{
+	cursor:hand; 
+	cursor:pointer;
+	list-style:none;
+	width:210px;
+	padding:0;
+	margin:0 10;
+	overflow:hidden;
+	 
+	
+}
+ul.lof-navigator li a{}
+.lof-navigator-outer{
+	position:absolute;
+	right:0;
+	top:0px;
+	z-index:100;
+	height:283px;
+	width:210px;
+	overflow:hidden;
+	color:#FFF;/* background:#fff;*/
+}
+.lof-navigator li.active{
+	background:url(../fr/image/png/current_act.png) right center no-repeat;
+	color:#FFF; vertical-align:top
+}
+.lof-navigator li:hover{
+	background:url(../fr/image/png/current_act.png) right center no-repeat;
+	color:#FFF
+} 
+.lof-snleft .lof-navigator li:hover div, .lof-snleft .lof-navigator li:hover div h3{background:none; color:#fff}
+
+.lof-navigator li h3{
+	color:#616379;
+	font-size:14px; font-family:Arial; font-weight:bold; text-transform:uppercase;
+	padding:30px 0 0 20px;
+	margin:0;
+
+}
+.lof-navigator li div{
+	/*background:#fff url(../images/bg_left.gif) left bottom repeat-x;*/
+	color:#616379;
+	height:100%;
+	position:relative;
+	border-bottom:#c2c2bd solid 1px;
+	/*margin-left:15px;
+	padding-left:15px;
+	border-top:1px solid #E1E1E1;*/
+}
+
+.lof-navigator li.active div{
+	/*background:url(../images/bg_li.gif) left top repeat-y;*/
+	color:#FFF;
+}
+.lof-navigator li img{
+	height:60px;
+	width:60px;
+	margin:15px 15px 10px 0px;
+	float:left;
+	padding:3px;
+	border:#C5C5C5 solid 1px;
+}
+.lof-navigator li.active img{
+	border:##6C8E5C  solid 1px;
+}
+.lof-navigator li.active h3{
+	color:#FFF;
+}
+
+.lof-snleft  .lof-main-outer{
+		float:right;
+	}
+	/* move the main wapper to the right side */
+	.lof-snleft .lof-main-wapper{
+		margin-left:auto;
+		margin-right:inherit;
+		clear:both;
+		height:283px;
+	}
+	/* move the navigator to the left  side */
+	.lof-snleft .lof-navigator-outer{
+		left:0;
+		top:0;
+		right:inherit;
+		
+	}
+	
+	ul.lof-main-wapper li {
+		position:relative;	
+	}
+	.lof-snleft .lof-navigator .active{
+		background:url(../fr/image/png/current_act.png) right center no-repeat;
+	}
+	.lof-snleft .lof-navigator li div{
+		margin-left:inherit;
+		margin-right:10px;
+		background:#fff url(../images/bg_left.gif) right bottom repeat-x; 
+	}
+	
+	.lof-snleft .lof-navigator li.active div{
+		margin-left:inherit;
+		/*margin-right:18px;
+		background:url(images/grad-bg2.gif)*/
+		background:none
+		
+	}
