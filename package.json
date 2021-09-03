@@ -1,17 +1,14 @@
 {
-  "name": "test-insat",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "insat",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.2",
-    "fa-icons": "^0.2.0",
-    "jquery": "^3.6.0",
-    "poper": "^0.1.1"
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "twig": "~0.10.3"
   }
 }
