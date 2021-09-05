@@ -1,6 +1,10 @@
 {% extends 'layout.twig' %}
 
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="stylesheets/home.css" />
+{% endblock %}
+
 {% block body %}
-  <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+	{% include 'top-banner.twig' %}
 {% endblock %}
