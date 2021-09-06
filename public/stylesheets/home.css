@@ -22,3 +22,61 @@
 .flag {
     flex-basis: 100px;
 }
+
+/* NAVIGATION */
+.top-nav {
+    text-transform: uppercase;
+    padding-left: 80px;
+}
+.top-nav a, .top-nav li {
+    color: #F80000;
+}
+.bot-nav {
+    text-transform: capitalize;
+    width: 100%;
+}
+.bot-nav li {
+    color: #920000;
+    font-size: 1.5em;
+}
+.header nav {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-around;
+}
+.logo {
+    flex-basis: 20%;
+    text-align: center;
+}
+.logo img {
+    height: 200px;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    flex-basis: 50%;
+    font-weight: 500;
+}
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+#recherche {
+    color: #920000;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 13px 38px;
+    border: 1px solid #8E8E8E;
+    background: none;
+}
+
+.fa-search {
+    color: #333;
+    margin-right: 3px;
+}
