@@ -2,10 +2,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-family: 'Montserrat', sans-serif!important;
+  font-size: 15px!important;
 }
 a {
-  text-decoration: none;
+  text-decoration: none!important;
   color: black;
 }
+
