@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="587833ba-4e81-4ba0-b816-36364fa81484" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/gloire.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/actualite.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/actualite.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
