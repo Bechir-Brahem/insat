@@ -1,0 +1,30 @@
+{% extends 'layout.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet"  type="text/css" href="/stylesheets/home.css"/>
+{% endblock %}
+
+{% block body %}
+    {% include 'header.twig' %}
+    <style>
+        .pdfobject-container {
+            height: 100vh;
+            border: 1rem solid rgba(0, 0, 0, .1);
+        }
+    </style>
+    <div class="container">
+        <a href="/actualite">retour à actualités</a>
+        <h3 class="mt-4 mb-4 " style="text-align: center">Résultats du concours spécifique "Cycle Ingénieur" de l'INSAT. Session 2021 pour le compte de
+            l'année universitaire 2021/2022</h3>
+        <div style="display: flex;justify-content: center">
+            <hr style="width: 50%;margin-bottom: 50px;">
+        </div>
+        <div id="example1" style="margin: 0 100px 100px;"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js"
+            integrity="sha512-B+t1szGNm59mEke9jCc5nSYZTsNXIadszIDSLj79fEV87QtNGFNrD6L+kjMSmYGBLzapoiR9Okz3JJNNyS2TSg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>PDFObject.embed("/pdf/1630336955.pdf", "#example1");</script>
+
+{% endblock %}

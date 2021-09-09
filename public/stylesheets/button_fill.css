@@ -1,0 +1,42 @@
+
+button.fill {
+    position: relative;
+    height: 45px;
+    width: 150px;
+    padding: 5px 5px;
+    font-size: 15px;
+    color: #900f00;
+    border: 2px #900f00 solid;
+    border-radius: 4px;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+    color: whitesmoke;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #900f00;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+    top: 0;
+}
+
