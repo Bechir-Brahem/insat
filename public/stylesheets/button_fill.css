@@ -40,3 +40,24 @@ button.fill {
     top: 0;
 }
 
+button.actualites {
+    width: 30%;
+    font-weight: bold;
+}
+
+.align-right {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+}
+.btn-insat{
+    background-color: #900f00;
+    color: #E9E9E7;
+    padding: 10px 10px;
+    border: 2px #900f00 solid;
+    border-radius: 10px;
+    width: 25%;
+    font-weight: bold;
+}
+
