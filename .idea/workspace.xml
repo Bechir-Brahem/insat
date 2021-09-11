@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="587833ba-4e81-4ba0-b816-36364fa81484" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/email2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/phone-call.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/right-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/index/footer.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/button_fill.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/button_fill.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/actualite/actualites.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/actualite/actualites.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index/alaune.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/alaune.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/index.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -82,7 +91,9 @@
       <workItem from="1631227024307" duration="1607000" />
       <workItem from="1631228655111" duration="2777000" />
       <workItem from="1631281986748" duration="13000" />
-      <workItem from="1631284199064" duration="1523000" />
+      <workItem from="1631284199064" duration="1859000" />
+      <workItem from="1631366953119" duration="15000" />
+      <workItem from="1631366970794" duration="5291000" />
     </task>
     <servers />
   </component>
@@ -100,5 +111,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
