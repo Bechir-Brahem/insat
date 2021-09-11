@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="587833ba-4e81-4ba0-b816-36364fa81484" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/codfi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/france.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/insa-lyon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/nantes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/polytech.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index/partenaires.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ept.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/mers.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/supcom.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index/partenaires.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/partenaires.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <workItem from="1631281986748" duration="13000" />
       <workItem from="1631284199064" duration="1859000" />
       <workItem from="1631366953119" duration="15000" />
-      <workItem from="1631366970794" duration="8062000" />
+      <workItem from="1631366970794" duration="8710000" />
     </task>
     <servers />
   </component>
