@@ -56,19 +56,43 @@
         background-color: #900f00;
     }
 
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
+    .fade-in-text {
+        animation: fadeIn linear 7s;
+        -webkit-animation: fadeIn linear 2s;
+        -moz-animation: fadeIn linear 2s;
+        -o-animation: fadeIn linear 2s;
+        -ms-animation: fadeIn linear 2s;
+    }
+    .fade-in-image {
+        animation: fadeIn 5s;
+        -webkit-animation: fadeIn 5s;
+        -moz-animation: fadeIn 5s;
+        -o-animation: fadeIn 5s;
+        -ms-animation: fadeIn 5s;
+    }
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
     }
 
-    @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
+    @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
     }
 
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
+    @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+
+    @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+
+    @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
     }
     @media only screen and (max-width: 300px) {
         .prev, .next,.text {font-size: 11px}
@@ -127,11 +151,11 @@
     <div class="mySlides">
         <div class="row cont" style="margin-top: 70px;margin-bottom: 50px;">
             <div class="col-md-12 col-lg-5">
-                <img src="/images/insat1.jpg" alt="" class="photo">
+                <img src="/images/insat1.jpg" alt="" class="photo fade-in-image">
             </div>
             <div class="col-md-12 col-lg-5 offset-md-0 offset-lg-2">
-                <h4 style="font-weight: bold" class="mb-5">Lorem ipsum dolor sit amet</h4>
-                <p>
+                <h4 style="font-weight: bold" class="mb-5 fade-in-text">Lorem ipsum dolor sit amet</h4>
+                <p class="fade-in-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et fugiat iste molestiae,
                     perferendis quae. Consectetur delectus earum error eum illum, iure labore molestiae nam, officia porro
                     praesentium reprehenderit.
@@ -151,11 +175,11 @@
     <div class="mySlides">
         <div class="row cont" style="margin-top: 70px;margin-bottom: 50px;">
             <div class="col-md-12 col-lg-5">
-                <img src="/images/insat2.jpg" alt="" class="photo">
+                <img src="/images/insat2.jpg" alt="" class="photo fade-in-image">
             </div>
             <div class="col-md-12 col-lg-5 offset-md-0 offset-lg-2">
-                <h4 style="font-weight: bold" class="mb-5">Lorem ipsum dolor sit amet</h4>
-                <p>
+                <h4 style="font-weight: bold" class="mb-5 fade-in-text">Lorem ipsum dolor sit amet</h4>
+                <p class="fade-in-text">
                     Ullamcorper sit amet risus nullam eget felis eget. Ornare arcu odio ut sem. Leo duis ut diam quam. In cursus turpis massa tincidunt dui ut. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Odio ut sem nulla pharetra. Mauris sit amet massa vitae tortor condimentum lacinia. Quam nulla porttitor massa id. Vestibulum morbi blandit cursus risus at ultrices. Interdum velit laoreet id donec. Quis auctor elit sed vulputate mi sit amet mauris commodo. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Malesuada proin libero nunc consequat interdum varius sit. Felis donec et odio pellentesque diam volutpat commodo. Porta non pulvinar neque laoreet suspendisse. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis.
                 </p>
                 <button class="fill mt-3 mb-md-5">En savoir plus</button>
@@ -167,11 +191,11 @@
     <div class="mySlides">
         <div class="row cont" style="margin-top: 70px;margin-bottom: 50px;">
             <div class="col-md-12 col-lg-5">
-               <img src="/images/insat3.jpg" alt="" class="photo">
+               <img src="/images/insat3.jpg" alt="" class="photo fade-in-image">
             </div>
             <div class="col-md-12 col-lg-5 offset-md-0 offset-lg-2">
-                <h4 style="font-weight: bold" class="mb-5">Lorem ipsum dolor sit amet</h4>
-                <p>
+                <h4 style="font-weight: bold" class="mb-5 fade-in-text">Lorem ipsum dolor sit amet</h4>
+                <p class="fade-in-text">
                     Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Orci nulla pellentesque dignissim enim sit amet venenatis. A erat nam at lectus urna duis convallis convallis tellus. Et tortor consequat id porta. Pellentesque massa placerat duis ultricies lacus sed turpis. Justo nec ultrices dui sapien eget mi proin. Tellus at urna condimentum mattis pellentesque id. Purus sit amet luctus venenatis lectus magna fringilla. Sed vulputate odio ut enim blandit. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Feugiat vivamus at augue eget. A cras semper auctor neque vitae tempus quam. Risus quis varius quam quisque id diam vel quam.
                 </p>
                 <button class="fill mt-3 mb-md-5">En savoir plus</button>
