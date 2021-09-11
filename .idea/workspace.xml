@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="587833ba-4e81-4ba0-b816-36364fa81484" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/email2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/phone-call.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/right-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index/footer.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/codfi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/france.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/insa-lyon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/nantes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/polytech.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/index/partenaires.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index/alaune.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/alaune.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/index.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,7 @@
       <workItem from="1631281986748" duration="13000" />
       <workItem from="1631284199064" duration="1859000" />
       <workItem from="1631366953119" duration="15000" />
-      <workItem from="1631366970794" duration="5291000" />
+      <workItem from="1631366970794" duration="8062000" />
     </task>
     <servers />
   </component>
