@@ -5,10 +5,32 @@
     img {vertical-align: middle;}
     .slideshow-container {
         position: relative;
-        margin: auto;
+    }
+    .cont {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #900f00;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
     }
     .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+        color: #900f00;
+        background-color: #bbb;
     }
     .text {
         color: #f2f2f2;
@@ -31,7 +53,7 @@
     }
 
     .active, .dot:hover {
-        background-color: #900f00;;
+        background-color: #900f00;
     }
 
     .fade {
@@ -103,7 +125,7 @@
 <div class="slideshow-container">
 
     <div class="mySlides">
-        <div class="row" style="margin-top: 70px;margin-bottom: 50px;">
+        <div class="row cont" style="margin-top: 70px;margin-bottom: 50px;">
             <div class="col-md-12 col-lg-5">
                 <img src="/images/insat1.jpg" alt="" class="photo">
             </div>
@@ -127,22 +149,14 @@
     </div>
 
     <div class="mySlides">
-        <div class="row" style="margin-top: 70px;margin-bottom: 50px;">
+        <div class="row cont" style="margin-top: 70px;margin-bottom: 50px;">
             <div class="col-md-12 col-lg-5">
                 <img src="/images/insat2.jpg" alt="" class="photo">
             </div>
             <div class="col-md-12 col-lg-5 offset-md-0 offset-lg-2">
                 <h4 style="font-weight: bold" class="mb-5">Lorem ipsum dolor sit amet</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et fugiat iste molestiae,
-                    perferendis quae. Consectetur delectus earum error eum illum, iure labore molestiae nam, officia porro
-                    praesentium reprehenderit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et fugiat iste molestiae,
-                    perferendis quae. Consectetur delectus earum error eum illum, iure labore molestiae nam, officia porro
-                    praesentium reprehenderit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et fugiat iste molestiae,
-                    perferendis quae. Consectetur delectus earum error eum illum, iure labore molestiae nam, officia porro
-                    praesentium reprehenderit.
+                    Ullamcorper sit amet risus nullam eget felis eget. Ornare arcu odio ut sem. Leo duis ut diam quam. In cursus turpis massa tincidunt dui ut. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Odio ut sem nulla pharetra. Mauris sit amet massa vitae tortor condimentum lacinia. Quam nulla porttitor massa id. Vestibulum morbi blandit cursus risus at ultrices. Interdum velit laoreet id donec. Quis auctor elit sed vulputate mi sit amet mauris commodo. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Malesuada proin libero nunc consequat interdum varius sit. Felis donec et odio pellentesque diam volutpat commodo. Porta non pulvinar neque laoreet suspendisse. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis.
                 </p>
                 <button class="fill mt-3 mb-md-5">En savoir plus</button>
             </div>
@@ -151,28 +165,22 @@
     </div>
 
     <div class="mySlides">
-        <div class="row" style="margin-top: 70px;margin-bottom: 50px;">
+        <div class="row cont" style="margin-top: 70px;margin-bottom: 50px;">
             <div class="col-md-12 col-lg-5">
                <img src="/images/insat3.jpg" alt="" class="photo">
             </div>
             <div class="col-md-12 col-lg-5 offset-md-0 offset-lg-2">
                 <h4 style="font-weight: bold" class="mb-5">Lorem ipsum dolor sit amet</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et fugiat iste molestiae,
-                    perferendis quae. Consectetur delectus earum error eum illum, iure labore molestiae nam, officia porro
-                    praesentium reprehenderit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et fugiat iste molestiae,
-                    perferendis quae. Consectetur delectus earum error eum illum, iure labore molestiae nam, officia porro
-                    praesentium reprehenderit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et fugiat iste molestiae,
-                    perferendis quae. Consectetur delectus earum error eum illum, iure labore molestiae nam, officia porro
-                    praesentium reprehenderit.
+                    Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Orci nulla pellentesque dignissim enim sit amet venenatis. A erat nam at lectus urna duis convallis convallis tellus. Et tortor consequat id porta. Pellentesque massa placerat duis ultricies lacus sed turpis. Justo nec ultrices dui sapien eget mi proin. Tellus at urna condimentum mattis pellentesque id. Purus sit amet luctus venenatis lectus magna fringilla. Sed vulputate odio ut enim blandit. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Feugiat vivamus at augue eget. A cras semper auctor neque vitae tempus quam. Risus quis varius quam quisque id diam vel quam.
                 </p>
                 <button class="fill mt-3 mb-md-5">En savoir plus</button>
             </div>
 
         </div>
     </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
 <div style="text-align:center">
