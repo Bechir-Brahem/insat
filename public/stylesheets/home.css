@@ -16,8 +16,9 @@
 }
 .banner-side {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    flex-basis: 600px;
+    flex-basis: 400px;
 }
 .flag {
     flex-basis: 100px;
@@ -125,4 +126,8 @@
 }
 .big{
     font-size: 1.5rem!important;
+}
+
+.banner-side p{
+    padding: 0 10%;
 }
