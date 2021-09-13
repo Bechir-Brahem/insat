@@ -1,64 +1,74 @@
 <header class="header">
     <nav>
-        <a href="/">
-            <div class="logo">
-                <img src="/images/insat-logo.svg" alt="INSAT's logo">
-            </div>
-        </a>
-        <div class="navigation">
-            <div class="top-nav">
-                <ul class="horizontal">
-                    <li><a href="#">calendriers</a></li>
-                    <li>.</li>
-                    <li><a href="#">entreprises</a></li>
-                    <li>.</li>
-                    <li><a href="#">documents</a></li>
-                    <li>.</li>
-                    <li><a href="#">archives</a></li>
-                    <button id="recherche"><i class="fas fa-search"></i>recherche</button>
-                </ul>
-            </div>
-            <div class="bot-nav">
-                <ul class="horizontal">
-                    <li><div class="bot-nav-item">accueil</div></li>
-                    <li>
-                        <div class="dropdown-head">
-                            a propos
-                        </div>
-                        <ul class="dropdown-list">
-                            <li>historique</li>
-                            <li>mot du directeur</li>
-                            <li>partenariat</li>
-                            <li>galerie de photos</li>
-                            <li>staff administratif</li>
-                            <li>Chiffres Clés</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="dropdown-head">
-                            education
-                        </div>
-                        <ul class="dropdown-list">
-                            <li>Cycle Préparatoire
-                                Intégré</li>
-                            <li>Diplômes d'Ingénieur</li>
-                            <li>Licences appliquées</li>
-                            <li>Mastères Professionnelles</li>
-                            <li>Enseignement à Distance</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="bot-nav-item">
-                            about INSAT
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bot-nav-item">
-                            contact
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="bot-nav">
+            <ul class="horizontal" style="display: flex;justify-content: center;">
+                <li>
+                    <div class="dropdown-head">
+                        a propos
+                    </div>
+                    <ul class="dropdown-list">
+                        <li>historique</li>
+                        <li>mot du directeur</li>
+                        <li>partenariat</li>
+                        <li>galerie de photos</li>
+                        <li>staff administratif</li>
+                        <li>Chiffres Clés</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="bot-nav-item">Formation</div>
+                </li>
+                <li>
+                    <div class="bot-nav-item">Documents</div>
+                </li>
+                <li>
+                    <div class="bot-nav-item">Vie estudiantine</div>
+                </li>
+                <a href="/">
+                    <div class="logo">
+                        <img src="/images/insat-logo.svg" alt="INSAT's logo">
+                    </div>
+                </a>
+                <li>
+                    <div class="bot-nav-item">emplois</div>
+                </li>
+                <li>
+                    <div class="bot-nav-item">entreprises</div>
+                </li>
+                <li>
+                    <div class="bot-nav-item">contact</div>
+                </li>
+                <button id="recherche" onclick="addSearch()"><i class="fas fa-search"></i>recherche</button>
+            </ul>
+        </div>
         </div>
     </nav>
+    <form id="searchBar" class="displaySearch">
+        <div style="padding: 10px 10%">
+            <input class="form-control form-control-lg" type="text" placeholder="Recherche..." style="border: 2px #900f00 solid">
+
+        </div>
+    </form>
 </header>
+<style>
+    #searchBar{
+        animation-duration: 1s;
+    }
+    .displaySearch{
+        display: none;
+
+
+    }
+    .form-control:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0rem rgba(40, 167, 69, 0.25);
+    }
+
+</style>
+<script>
+    function addSearch() {
+        document.getElementById("searchBar").classList.toggle("displaySearch")
+
+    }
+
+</script>
