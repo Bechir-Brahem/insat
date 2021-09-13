@@ -42,7 +42,7 @@
 }
 .bot-nav>.horizontal>li {
     color: #920000;
-    font-size: 1.5em;
+    font-size: 1.1vw;
     /*padding: 15px 0;*/
 }
 .header nav {
@@ -95,6 +95,7 @@
     position: absolute;
     list-style: none;
     padding: 30px 20px 20px 10px;
+    padding-left: 1vw;
     border: 1px solid #8e8e8e;
     border-left: 5px solid #900f00;
     margin-top: -1px;
@@ -125,7 +126,7 @@
     color: #F80000;
 }
 .big{
-    font-size: 1.5rem!important;
+    font-size: 1.1vw!important;
 }
 
 .banner-side p{
