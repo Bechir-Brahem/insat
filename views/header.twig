@@ -71,4 +71,41 @@
 
     }
 
+    function addEventHandler(sel, event, handler){
+        document.querySelectorAll(sel).forEach((el) => {
+            el.addEventListener(event, handler);
+        })
+    }
+
+    let timeouts = new WeakMap();
+
+    addEventHandler('.horizontal>li', 'mouseleave', (ev) => {
+        let [ dropDownList, ] = Array.from(ev.target.children).filter(el => el.classList.contains("dropdown-list"))
+        let [ dropDownHead, ] = Array.from(ev.target.children).filter(el => el.classList.contains("dropdown-head"))
+        if(dropDownList){
+            dropDownList.style.opacity = 0;
+            const tm = setTimeout(() => {
+                dropDownList.style.display = 'none';
+                dropDownHead.style.background = 'transparent';
+            }, 300);
+            timeouts.set(ev.target, tm);
+        }
+    })
+
+
+    addEventHandler('.horizontal>li', 'mouseenter', (ev) => {
+        let [ dropDownList, ] = Array.from(ev.target.children).filter(el => el.classList.contains("dropdown-list"))
+        let [ dropDownHead, ] = Array.from(ev.target.children).filter(el => el.classList.contains("dropdown-head"))
+        if(dropDownList){
+            if(timeouts.has(ev.target)){
+                clearTimeout(timeouts.get(ev.target));
+            }
+            dropDownList.style.display = 'block';
+            setTimeout(() => {
+                dropDownList.style.opacity = 1;
+            }, 0);
+            dropDownHead.style.background = 'white';
+        }
+    })
+
 </script>
