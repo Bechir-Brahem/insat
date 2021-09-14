@@ -52,7 +52,9 @@
 </header>
 <style>
     #searchBar{
-        animation-duration: 1s;
+        transition: opacity 0.3s;
+        opacity: 0;
+        display: none;
     }
     .displaySearch{
         display: none;
@@ -66,9 +68,16 @@
 
 </style>
 <script>
+    let searchVisible = false;
+    const searchBar = document.querySelector('#searchBar');
     function addSearch() {
-        document.getElementById("searchBar").classList.toggle("displaySearch")
-
+        if(searchVisible){
+            fadeOut(searchBar);
+            searchVisible = false;
+        } else {
+            fadeIn(searchBar);
+            searchVisible = true;
+        }
     }
 
     function addEventHandler(sel, event, handler){
@@ -108,4 +117,16 @@
         }
     })
 
+    function fadeIn(target){
+        target.style.display = 'block';
+        setTimeout(() => {
+            target.style.opacity = 1;
+        }, 0);
+    }
+   function fadeOut(target){
+        target.style.opacity = 0;
+        setTimeout(() => {
+            target.style.display = 'none';
+        }, 300);
+    }
 </script>
