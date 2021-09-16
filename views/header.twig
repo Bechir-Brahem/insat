@@ -1,47 +1,75 @@
 <header class="header">
-    <nav>
-        <div class="bot-nav">
-            <ul class="horizontal" style="display: flex;justify-content: center;">
-                <li>
-                    <div class="dropdown-head big">
-                        a propos
-                    </div>
-                    <ul class="dropdown-list">
-                        <li>historique</li>
-                        <li>mot du directeur</li>
-                        <li>partenariat</li>
-                        <li>galerie de photos</li>
-                        <li>staff administratif</li>
-                        <li>Chiffres Clés</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="bot-nav-item big">Formation</div>
-                </li>
-                <li>
-                    <div class="bot-nav-item big">Documents</div>
-                </li>
-                <li>
-                    <div class="bot-nav-item big">Vie estudiantine</div>
-                </li>
-                <a href="/">
-                    <div class="logo">
-                        <img src="/images/insat-logo.svg" alt="INSAT's logo">
-                    </div>
-                </a>
-                <li>
-                    <div class="bot-nav-item big">emplois</div>
-                </li>
-                <li>
-                    <div class="bot-nav-item big">entreprises</div>
-                </li>
-                <li>
-                    <div class="bot-nav-item big">contact</div>
-                </li>
-                <button id="recherche" onclick="addSearch()"><i class="fas fa-search"></i>recherche</button>
-            </ul>
-        </div>
-        </div>
+    <section class="p-menu1">
+        <nav id="navbar" class="navigation" role="navigation">
+            <input id="toggle1" type="checkbox" />
+            <label class="hamburger1" for="toggle1">
+                <div class="top"></div>
+                <div class="meat"></div>
+                <div class="bottom"></div>
+            </label>
+
+            <nav class="menu1">
+                <input type="checkbox" id="toggle2">
+                <label for="toggle2" class="link1">
+                    a propos
+                </label>
+                <nav class="menu2">
+                    <a href="" class="link2">historique</a>
+                    <a href="" class="link2">mot du directeur</a>
+                    <a href="" class="link2">partenariat</a>
+                    <a href="" class="link2">galerie de photos</a>
+                    <a href="" class="link2">staff administratif</a>
+                    <a href="" class="link2">Chiffres Clés</a>
+                </nav>
+                <a class="link1" href="">Formation</a>
+                <a class="link1" href="">Documents</a>
+                <a class="link1" href="">Vie estudiantine</a>
+                <a class="link1" href="">emplois</a>
+                <a class="link1" href="">entreprises</a>
+                <a class="link1" href="">contact</a>
+            </nav>
+        </nav>
+    </section>
+    <nav class="bot-nav">
+        <ul class="horizontal" style="display: flex;justify-content: center;">
+            <li>
+                <div class="dropdown-head big">
+                    a propos
+                </div>
+                <ul class="dropdown-list">
+                    <li>historique</li>
+                    <li>mot du directeur</li>
+                    <li>partenariat</li>
+                    <li>galerie de photos</li>
+                    <li>staff administratif</li>
+                    <li>Chiffres Clés</li>
+                </ul>
+            </li>
+            <li>
+                <div class="bot-nav-item big">Formation</div>
+            </li>
+            <li>
+                <div class="bot-nav-item big">Documents</div>
+            </li>
+            <li>
+                <div class="bot-nav-item big">Vie estudiantine</div>
+            </li>
+            <a href="/">
+                <div class="logo">
+                    <img src="/images/insat-logo.svg" alt="INSAT's logo">
+                </div>
+            </a>
+            <li>
+                <div class="bot-nav-item big">emplois</div>
+            </li>
+            <li>
+                <div class="bot-nav-item big">entreprises</div>
+            </li>
+            <li>
+                <div class="bot-nav-item big">contact</div>
+            </li>
+            <button id="recherche" onclick="addSearch()"><i class="fas fa-search"></i>recherche</button>
+        </ul>
     </nav>
     <form id="searchBar" class="displaySearch">
         <div style="padding: 10px 10%">
@@ -52,7 +80,7 @@
 </header>
 <style>
     #searchBar{
-        transition: opacity 0.3s;
+        transition: opacity 0.5s;
         opacity: 0;
         display: none;
     }
